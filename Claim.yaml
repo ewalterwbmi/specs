@@ -1,0 +1,24 @@
+Claim:
+    type: object
+    properties:
+    id:
+        type: integer
+        description: The ID of the claim
+    date:
+        type: string
+        format: date
+        description: The date the claim was submitted
+    type:
+        type: string
+        description: The type of claim
+    amount:
+        type: number
+        format: float
+        description: The amount of the claim
+    status:
+        type: string
+        enum: [pending, approved, denied]
+        description: The status of the claim
+    customer_id:
+        type: integer
+        description: The ID of the customer who submitted the claim
