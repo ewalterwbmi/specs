@@ -20,7 +20,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: "https://raw.githubusercontent.com/ewalterwbmi/specs/main/Claim.yaml#/Claim"
+                  $ref: "https://raw.githubusercontent.com/ewalterwbmi/specs/main/Claim.yaml#/components/schemas/Claim"
     post:
       summary: Create a new claim
       operationId: createClaim
@@ -29,14 +29,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "https://raw.githubusercontent.com/ewalterwbmi/specs/main/Claim.yaml#/Claim"
+              $ref: "https://raw.githubusercontent.com/ewalterwbmi/specs/main/Claim.yaml#/components/schemas/Claim"
       responses:
         "201":
           description: The created claim
           content:
             application/json:
               schema:
-                $ref: "https://raw.githubusercontent.com/ewalterwbmi/specs/main/Claim.yaml#/Claim"
+                $ref: "https://raw.githubusercontent.com/ewalterwbmi/specs/main/Claim.yaml#/components/schemas/Claim"
 
   /claims/{id}:
     parameters:
@@ -55,7 +55,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "https://raw.githubusercontent.com/ewalterwbmi/specs/main/Claim.yaml#/Claim"
+                $ref: "https://raw.githubusercontent.com/ewalterwbmi/specs/main/Claim.yaml#/components/schemas/Claim"
         "404":
           description: Claim not found
     put:
@@ -66,14 +66,14 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "https://raw.githubusercontent.com/ewalterwbmi/specs/main/Claim.yaml#/Claim"
+              $ref: "https://raw.githubusercontent.com/ewalterwbmi/specs/main/Claim.yaml#/components/schemas/Claim"
       responses:
         "200":
           description: The updated claim
           content:
             application/json:
               schema:
-                $ref: "https://raw.githubusercontent.com/ewalterwbmi/specs/main/Claim.yaml#/Claim"
+                $ref: "https://raw.githubusercontent.com/ewalterwbmi/specs/main/Claim.yaml#/components/schemas/Claim"
         "404":
           description: Claim not found
     delete:
